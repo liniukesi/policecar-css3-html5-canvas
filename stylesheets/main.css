@@ -1,0 +1,175 @@
+body {
+    background: black;
+}
+
+.rect {
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    width: 240px;
+    height: 40px;
+    border-radius: 55px;
+    background: black;
+    border: 5px solid black;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, gray), color-stop(1, darkolivegreen));
+}
+
+.rect .rect-red {
+    width: 100px;
+    height: 40px;
+    background: red;
+    float: left;
+    border-radius: 55px;
+    -webkit-animation: anired 1.5s linear infinite;
+    animation: anired 1.5s linear infinite;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, red), color-stop(1, blue));
+}
+
+.rect .rect-blue {
+    width: 100px;
+    height: 40px;
+    background: blue;
+    /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff4f02), color-stop(1, #8f2c00));*/
+    float: right;
+    -webkit-animation: aniblue 1.5s linear infinite;
+    animation: aniblue 1.5s linear infinite;
+    border-radius: 55px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, blue), color-stop(1, red));
+}
+
+@-webkit-keyframes anired {
+    50%  {background: blue;}
+    100% {background: red;}
+}
+
+@keyframes anired {
+    50%  {background: blue;}
+    100% {background: red;}
+}
+
+@-webkit-keyframes aniblue {
+    50%  {background: red;}
+    100% {background: blue;}
+}
+
+@keyframes aniblue {
+    50%  {background: red;}
+    100% {background: blue;}
+}
+
+@-webkit-keyframes carlightyellow {
+    50%  {background: darkgray;}
+    100% {background: yellow;}
+}
+
+@keyframes carlightyellow {
+    50%  {background: darkgray;}
+    100% {background: yellow;}
+}
+
+.car-light {
+    position: absolute;
+    left: 238px;
+    top: 350px;
+    width: 360px;
+    height: 40px;
+    border-radius: 25px;
+    border: 5px solid black;
+    background: black;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), color-stop(1, black));
+}
+
+.car-light .car-light-left {
+    width: 70px;
+    height: 40px;
+    background: yellow;
+    float: left;
+    border-radius: 25px;
+    -webkit-animation:carlightyellow .7s linear infinite;
+    animation:carlightyellow .7s linear infinite;
+}
+
+.car-light .car-light-right {
+    width: 70px;
+    height: 40px;
+    background: yellow;
+    float: right;
+    border-radius: 25px;
+    -webkit-animation:carlightyellow .7s linear infinite;
+    animation:carlightyellow .7s linear infinite;
+}
+
+/* car window div */
+#car_window {
+    position: absolute;
+    left: 260px;
+    top: 145px;
+    width: 320px;
+    height: 140px;
+    border-radius: 5px;
+}
+
+/* car front cover */
+.car-front-cover {
+    position: absolute;
+    left: 250px;
+    top: 279px;
+    width: 335px;
+    height: 70px;
+    border-radius: 15px;
+    border: 5px solid black;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, gray), color-stop(1, black));
+}
+
+/* car wheel */
+.car-wheel-left {
+    position: absolute;
+    border-radius: 15px;
+    width: 50px;
+    height: 55px;
+    left: 265px;
+    top: 395px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, black), color-stop(1, darkgray));
+    border: 5px solid black;
+    -webkit-animation: carwheel 2s linear infinite;
+    animation: carwheel 2s linear infinite;
+}
+
+.car-wheel-right {
+    position: absolute;
+    border-radius: 15px;
+    width: 50px;
+    height: 55px;
+    left: 519px;
+    top: 395px;
+    border: 5px solid black;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.1, black), color-stop(1, darkgray));
+    -webkit-animation: carwheel 2s linear infinite;
+    animation: carwheel 2s linear infinite;
+}
+
+@-webkit-keyframes carwheel {
+    25% {background: gray;}
+    50%  {background: darkgray;}
+    75% {background: gray;}
+    100% {background: darkgray;}
+}
+
+@keyframes carwheel {
+    25% {background: gray;}
+    50%  {background: darkgray;}
+    75% {background: gray;}
+    100% {background: darkgray;}
+}
+
+.spot {
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 300px;
+    -webkit-box-shadow: 1px 1px 100px #ffef73;
+    box-shadow: 1px 1px 100px #ffef73;
+    background: #ffef73;
+    z-index: -1;
+}
